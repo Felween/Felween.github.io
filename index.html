@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="height=device-height"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="./ico/favicon.ico"/>
+    <title>Alexandra Demski</title>
+  </head>
+  <body>
+
+  <!--Height en fonction d'ecran et media print-->
+
+  <!--MENU-->
+
+    <header class="menu">
+      <a class="my-name" href="index.html">Alexandra Demski</a>
+      <input type=button onClick="document.getElementById('accueil').scrollIntoView();" class="btn-home" value="Home"/>
+      <input type=button onClick="document.getElementById('about').scrollIntoView();" class="btn-abt" value="About"/>
+      <input type=button onClick="document.getElementById('work').scrollIntoView();" class="btn-wrk" value="Work"/>
+      <input type=button onClick="document.getElementById('contact').scrollIntoView();" class="btn-ctc-eng" value="Contact"/>
+      <input type=button onClick="accueil.html" class="btn-eng" value="Eng"/>
+    </header>
+
+  <!--HOME-->
+
+    <section>
+
+        <article id="accueil">
+            <h1 class="hello">Hello & Welcome</h1>
+            <div class="typewriter">
+              <div class=rect>
+                  <p class="typewriter-text">I am <span>Alexandra Demski</span></p>
+              </div>
+            </div>
+        </article>
+
+  <!--ABOUT-->
+
+        <article id="about">
+
+          <h3>About me</h3>
+          <p class="intro">Welcome to my Portfolio. My name's Alexandra Demski and I am currently an IT student in the University of Paris-Est Créteil in Fontainebleau where I prepare my two-years degree.<br> I am actively looking for a work-study for the next year.</p>
+
+          <div class="content-about">
+
+              <div class="educ">
+                <h4>Education</h4>
+                <table class="tab">
+        					<tbody>
+        						<tr>
+        							<td class="tab-an">2016 - 2019</td>
+        							<td class="tab-ecole">Highschool Gay Lussac<br>Chauny</td>
+        						</tr>
+        						<tr>
+        							<td class="tab-an">2019</td>
+        							<td class="tab-ecole"><span>Scientific Baccalaureate</span><br>Biology option and IT specialization</td>
+        						</tr>
+        						<tr>
+        							<td class="tab-an">2019 - 2021</td>
+        							<td class="tab-ecole">Two-year degree in IT<br>IUT Sénart-Fontainebleau<br>Fontainebleau</td>
+        						</tr>
+        						<tr>
+        							<td class="tab-an">2021</td>
+        							<td class="tab-ecole"><span>Technical University Degree</span><br>Computer Science</td>
+        						</tr>
+        					</tbody>
+				        </table>
+              </div>
+
+              <div class="gen-info">
+              	<h4>Languages</h4>
+                <p class="lang">
+                    <span>English</span>, bilingual<br><br>
+                    <span>French</span>, maternal tongue<br><br>
+                    <span>Polish</span>, maternal tongue<br><br>
+                    <span>Deutsch</span>, average level<br><br>
+                    <span>Russian</span>, basic level
+                </p>
+              </div>
+
+              <div class="my-skills">
+                <h4>My skills</h4>
+
+                <h5>HTML/CSS</h5>
+                <div class="container">
+                  <div class="skills html">80%</div>
+                </div>
+
+                <h5>Java</h5>
+                <div class="container">
+                    <div class="skills jv">50%</div>
+                </div>
+
+                <h5>PL/SQL</h5>
+                <div class="container">
+                    <div class="skills sql">70%</div>
+                </div>
+
+                 <h5>Python</h5>
+                <div class="container">
+                    <div class="skills python">70%</div>
+                </div>
+
+                <h5>C89</h5>
+                <div class="container">
+                    <div class="skills c">50%</div>
+                </div>
+
+              </div>
+
+          </div>
+
+        </article>
+
+    <div class="resume">
+      <a href="alexandra-demski-eng-cv.pdf" class="btn-cv" target="_blank" download>Download my Resume</a>
+    </div>
+
+  <!--WORK-->
+
+      <div class="img-para-work"></div>
+
+      <article id="work">
+
+          <h3>My Work</h3>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="slideshow-container">
+
+            <div class="my-slides fade">
+
+              <h3 class="date-work">30.04.2019</h3>
+              <h4 class="name-work">Clever Oven</h4>
+              <h5 class="keywords">Website - Python/HTML/CSS/JS/PHP - Teamwork - School</h5>
+              <p class="info-work">Clever Oven was a one year project realised during my last highschool year. The goal was to create a website for visually impaired people who struggle with cooking. Indeed, for many pre-prepared food, guidelines are written with a very small font. The website helps them with this everyday dutty by automatically setting their oven for a specific aliment saved on their account. The management of registred users' information uses python and php programs with the most sensitive information encrypted.</p>
+              <a href="work.html" target="_blank" class="btn-read">Read More</a>
+
+            </div>
+
+            <div class="my-slides fade">
+
+              <h3 class="date-work">20.12.2019</h3>
+              <h4 class="name-work">The Snake Game</h4>
+              <h5 class="keywords">Video Game - C89 - Teamwork - School</h5>
+              <p class="info-work">The Snake Game was one of my firsts projects during my two years degree. The instructions are very simple: the player controls a constantly moving snake which collects pellets in order to gain points and, at the same time, grow. The project must contain a snake game with a few more rules including a timer, a button to pause or exit the game and a score system. For the graphic aspect of the game, I use a rudimentary graphic library given by the university.</p>
+              <a href="work.html" target="_blank" class="btn-read">Read More</a>
+
+            </div>
+
+            <!--<div class="my-slides fade">
+
+            <h3 class="date-work">13.01.2020</h3>
+            <h4 class="name-work">Personal website</h4>
+            <h5 class="keywords">Website - HTML/CSS/JS/PHP - Individual Work - School</h5>
+            <p class="info-work">The Personal website, also called Portfolio, is on the one hand, a school prohect aiming to put into practice my skills concerning wab development but is also, in the other hand, a professional project meeting certain ergonomis rules in order to inform the user while remaining attractive ; navigation, accessibility, readability and general appearance are therefore analized. The website must contain a home page, a resume and a contact form as well as links to my professional networks. It must also adapt itself according to the size of the screen.</p>
+            <a href="work.html" target="_blank" class="btn-read">Read More</a>
+
+            </div>-->
+
+          </div>
+      </article>
+
+  <!--CONTACT-->
+
+      <div class="img-para-ctc"></div>
+
+      <article id="contact">
+
+        <h3>Let's get in touch</h3>
+
+        <form method="post" action="mail.php">
+
+          <input type="text" class="name" id="name" name="name" placeholder="Your Full Name" required><br>
+          <input type="email" class="email" id="mail" name="mail" placeholder="Your Email" required><br>
+          <textarea class="msg" id="msg" name="msg" placeholder="Your Message" required></textarea><br>
+          <input type="submit" class="send" id="send" name="send" value="Submit" />
+          <input type="reset" class="res" value="Reset"/>
+
+        </form>
+
+        <a href="mailto:ademski@rocketmail.com" target="_blank" class="btn-email"><img src="./ico/email.png" class="img-email" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/alexandra-demski-0356a719a/" target="_blank" class="btn-lk"><img src="./ico/linkedin.png" class="img-lk" alt="Linkedin"></a>
+
+
+      </article>
+
+    </section>
+
+    <footer>
+
+    <p class="rights">
+      © Imagined and created by Alexandra Demski, all rights reserved<br>
+      The illustrations were downloaded from <a href="https://absurd.design/" title="Absurd design" target="_blank">absurd.design</a><br>
+      Icon made by <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup">Pixelmeetup</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br><br>
+      Created the 20th December 2019
+      <br>
+      Last update the 13th January 2020
+    </p>
+
+    </footer>
+
+    <script>
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n)
+    {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n)
+    {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n)
+    {
+      var i;
+      var slides = document.getElementsByClassName("my-slides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    </script>
+  </body>
+</html>

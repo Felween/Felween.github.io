@@ -1,0 +1,375 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html 		{background-color:white; scroll-behavior:smooth;}
+body 		{margin:0; padding-left:20px; padding-right:20px; padding-bottom:20px;}
+header 		{width:100%; padding-top:15px; padding-bottom:15px;}
+input:focus		{border:none;outline:none;}
+input:required 	{box-shadow:none;}
+input:invalid 	{box-shadow:none;}
+input					{border:none;}
+input::-moz-focus-inner {border:none;}
+a::-moz-focus-inner 	{border:none;}
+textarea:focus			{border:none;outline:none;}
+textarea::-moz-focus-inner {border:none;}
+textarea:required 		{box-shadow:none;}
+textarea:invalid 		{box-shadow:none;}
+textarea 				{box-shadow:none;}
+textarea {resize: none;}
+
+article
+{
+position:relative;
+padding-top:1px;
+background-color:white;
+text-align:center;
+font-family:'Ubuntu';
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+/* -------------------- MENU --------------------*/
+
+header input 	{position:relative; font-size:14px; width:9%;}
+header input:hover {letter-spacing:8px;}
+.btn-ctc-eng 	{width:12%;}
+.btn-eng 		{width:6%;}
+.btn-ctc-fr 	{width:5%;}
+
+header .my-name
+{
+text-decoration:none;
+font-family:'Ubuntu';
+font-size:22px;
+margin-left:25px;
+color:rgb(50,50,49);
+float:left;
+}
+
+.menu
+{
+height:cover;
+width:100%;
+position:sticky;
+top:0;
+text-align:right;
+background-color:white;
+z-index:1;
+padding-top:25px;
+padding-bottom:25px;
+}
+
+header input
+{
+position:relative;
+font-family:Geneva, sans-serif;
+text-transform:uppercase;
+color:rgb(50,50,49);
+letter-spacing:4px;
+background-color:transparent;
+border:none;
+cursor:pointer;
+transition:all 0.5s;
+-webkit-transition: all 0.5s;
+}
+
+.btn-acc,.btn-apr,.btn-trv,.btn-ctc-fr,.btn-fr,.btn-eng {margin-right:1%;margin-left:1%;}
+
+/* -------------------- ACCUEIL --------------------*/
+
+#accueil,#home 		{background-image:url("./img/07.png");font-size:32px; height:10em; padding-bottom:10%;}
+#accueil span 		{font-weight:bold;color:white;}
+#home span 			{font-size:40px;}
+#home p 			{font-size:35px;}
+.rect 				{background-color:rgb(50,50,49); margin:auto; padding-left:25px; padding-right:25px;}
+.typewriter 		{height:cover; display:inline-block; font-size:48px;}
+#home .typewriter 	{margin-top:10%;}
+.quote 				{color:white; font-size:35px; font-family:'Ubuntu'; display:inline-block;}
+
+.hello,.salutations
+{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+color:rgb(50,50,49);
+font-weight:400;
+font-size:45px;
+margin-top:5%;
+}
+
+.typewriter-text
+{
+display:inline-block;
+overflow:hidden;
+white-space:nowrap;
+color:white;
+letter-spacing:2px;
+border-right:4px solid white;
+box-sizing:border-box;
+animation:typing 3s steps(29, end),blink .75s step-end infinite;
+}
+
+@keyframes typing
+{
+  from{width: 0%}
+  to{width: 100%}
+}
+@keyframes blink
+{
+  from,to{border-color: transparent}
+  50% {border-color: white;}
+}
+
+h3
+{
+position:relative;
+font-family:'Lato',sans-serif;
+text-transform:uppercase;
+color:rgb(50,50,49);
+padding-top:3%;
+font-size:28px;
+}
+
+/* -------------------- A PROPOS --------------------*/
+
+#about {height:50em;}
+#about .intro {margin-left:5%; margin-right:5%; font-size:20px; color:rgb(50,49,49);}
+
+.content-about {display:inline;}
+.content-about h4, #introduction h4
+{
+text-transform:uppercase;
+color:rgb(50,50,49);
+text-align:center;
+font-size:23px;
+}
+
+.gen-info,.educ,.my-skills {width:25%; margin-right:1%; margin-left:1%; float:left;}
+.educ {margin-left:10%; text-align:center;}
+.educ,.my-skills {text-align:left;}
+.content-about h5 {font-size:15px; color:rgb(50,49,49);}
+
+.interest {height:70px; margin-right:4%; margin-left:4%;}
+.gen-info .lang {font-size:17px; color:rgb(50,49,49); margin-left:10%; margin-top:5%; margin-bottom:15%; text-align:left;}
+.gen-info span {font-weight:bold;}
+
+.tab-an,.tab-ecole {font-family:'Ubuntu'; color:rgb(50,50,49);}
+.tab-an {width:35%; padding:2%; font-weight:bold; text-align:right; border-right:2px solid grey;}
+.tab-ecole {text-align:left; padding:2%;}
+.tab {border-spacing:0 20px;}
+
+.container {border-radius:3px; background-color:#ddd; height:25px; width:100%;}
+.skills {text-align:right; color:white; border-radius:3px; font-size:12px; padding-top:5px;}
+.html,.jv,.sql,.python,.c {background-color:rgb(50,50,49); opacity:0.9; height:20px; padding-right:8px;}
+
+.html	{width:80%;}
+.jv 	{width:50%;}
+.sql 	{width:70%;}
+.python {width:70%;}
+.c 		{width:50%;}
+
+.resume
+{
+width:100%;
+height:cover;
+padding-top:30px;
+padding-bottom:30px;
+position:relative;
+background-color:rgb(50,50,49);
+text-align:center;
+}
+
+.btn-cv
+{
+position:relative;
+padding:10px;
+border:2px solid white;
+background-color:transparent;
+color:white;
+font-weight:bold;
+font-family:'Lato',sans-serif;
+text-decoration:none;
+cursor:pointer;
+box-shadow:5px 5px 20px black;
+transition:all 0.8s;
+font-size:18px;
+}
+
+.btn-cv:hover {background-color:white; color:rgb(50,50,49);}
+
+/* -------------------- TRAVAUX --------------------*/
+
+.img-para-work,.img-para-ctc,.img-para-skill
+{
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+height:400px;
+}
+
+.img-para-work 	{background-image:url("./img/06.png");}
+.img-para-ctc 	{background-image:url("./img/11.png");}
+.img-para-skill {background-image:url("./img/05.png");}
+
+#work {height:640px; padding-bottom:2%;}
+
+.my-slides
+{
+display:none;
+width:cover;
+height:cover;
+font-family:'Roboto';
+text-align:justify;
+}
+
+.slideshow-container
+{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+color:rgb(50,50,49);
+width:50%;
+height:60%;
+}
+
+.date-work {font-size:21px;}
+.info-work {font-size:20px;height:cover;}
+.name-work {color:rgb(50,50,49); font-size:26px;}
+.keywords {font-weight:bold; font-size:18px;}
+
+.prev,.next
+{
+cursor:pointer;
+position:static;
+width:auto;
+padding:16px;
+color:rgb(50,50,49);
+font-weight:bold;
+transition: 0.6s ease;
+font-size:40px; margin-top:8%;
+}
+
+.prev {float:left; margin-left:18%;}
+.next {float:right; margin-right:18%;}
+
+.prev:hover,.next:hover {color:grey;}
+
+.btn-read
+{
+position:relative;
+margin-top:100%;
+cursor:pointer;
+border:solid 2px rgb(50,50,49);
+background-color:transparent;
+color:rgb(50,50,49);
+font-family:'Roboto';
+text-decoration:none;
+padding:10px;
+transition:0.5s ease;
+font-size:18px;
+}
+
+.btn-read:hover{background-color:rgb(50,50,49);color:white;}
+
+.fade{-webkit-animation-name: fade;-webkit-animation-duration:1.5s;animation-name:fade;animation-duration: 1.5s;}
+
+@-webkit-keyframes fade
+{
+  from {opacity:.4}
+  to {opacity:1}
+}
+
+@keyframes fade
+{
+  from {opacity:.4}
+  to {opacity:1}
+}
+
+/* -------------------- CONTACT --------------------*/
+
+#contact {height:cover;}
+
+form
+{
+position:relative;
+margin-right:auto;
+margin-left:auto;
+width:40%;
+}
+
+.name,.email,.msg
+{
+position:relative;
+padding:10px;
+color:rgb(50,50,49);
+background-color:transparent;
+transition:all 0.3s ease;
+width:55%;
+margin-top:3%;
+font-family:'Ubuntu';
+font-size:14px;
+}
+.name,.email {border:none; border-bottom:2px solid rgb(192,192,192);}
+.msg {height:8em; border:2px solid rgb(192,192,192);}
+.name:focus,.email:focus {border-bottom:2px solid rgb(50,50,49);}
+.msg:focus {border:2px solid rgb(50,50,49);}
+
+.send,.res,.rein
+{
+position:relative;
+width:cover;
+padding:10px;
+border-radius:5px;
+color:white;
+font-weight:bold;
+background-color:rgb(50,50,49);
+cursor:pointer;
+transition:all 0.8s;
+margin-top:4%;
+margin-left:2%;
+margin-right:2%;
+}
+
+.send:hover,.res:hover,.rein:hover {background-color:rgb(192,192,192);}
+
+.btn-email{position:relative; margin-left:50%;}
+.btn-lk{position:relative;}
+.img-email{height:8em;}
+.img-lk{height:8em;}
+
+/* -------------------- FOOTER --------------------*/
+
+footer
+{
+padding-top:1px;
+position:relative;
+color:white;
+background-color:rgb(50,50,49);
+text-align:center;
+height:cover;
+width:100%;
+padding-bottom:1%;
+margin-top:1%;
+}
+
+.rights
+{
+position:relative;
+font-family:'Ubuntu';
+font-size:15px;
+margin-top:3%;
+}
+
+footer a {color:white;cursor:pointer;}
+
+/* -------------------- INTRODUCTION --------------------*/
+
+#introduction .intro 	{margin-left:5%; margin-right:5%; font-size:20px; color:rgb(50,49,49);}
+#introduction 			{height:40em;}
+#introduction span 		{font-weight: bold;}
+#introduction p 		{font-size:18px; color:rgb(50,49,49);}
+#introduction .my-skills, .my-softw 	{width:30%; float:left; text-align:left;}
+#introduction .my-skills				{margin-left:20%;}
