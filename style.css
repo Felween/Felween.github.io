@@ -235,6 +235,7 @@ width:50%;
 height:60%;
 }
 
+.date-work,.info-work,.name-work,.keywords {color:rgb(50,50,49);}
 .date-work {font-size:21px;}
 .info-work {font-size:20px;height:cover;}
 .name-work {color:rgb(50,50,49); font-size:26px;}
@@ -373,3 +374,8 @@ footer a {color:white;cursor:pointer;}
 #introduction p 		{font-size:18px; color:rgb(50,49,49);}
 #introduction .my-skills, .my-softw 	{width:30%; float:left; text-align:left;}
 #introduction .my-skills				{margin-left:20%;}
+
+/* -------------------- My WORK --------------------*/
+
+#my-work {height:60em;}
+#my-work .projet {float:left; margin-left:5%; background-color:red;}
