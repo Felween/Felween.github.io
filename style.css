@@ -214,54 +214,13 @@ height:400px;
 .img-para-ctc 	{background-image:url("./img/11.png");}
 .img-para-skill {background-image:url("./img/05.png");}
 
-#work {height:640px; padding-bottom:2%;}
-
-.my-slides
+#my-work {height:60em; padding-left:5%; padding-right:5%;}
+#my-work .projet {display:inline; background-color:transparent; text-align:left;}
+#my-work .info-work {margin-bottom:3%; text-align:justify;}
+.btn-rapport, .btn-code 
 {
-display:none;
-width:cover;
-height:cover;
-font-family:'Roboto';
-text-align:justify;
-}
-
-.slideshow-container
-{
+margin-left:5%;
 position:relative;
-margin-left:auto;
-margin-right:auto;
-color:rgb(50,50,49);
-width:50%;
-height:60%;
-}
-
-.date-work,.info-work,.name-work,.keywords {color:rgb(50,50,49);}
-.date-work {font-size:21px;}
-.info-work {font-size:20px;height:cover;}
-.name-work {color:rgb(50,50,49); font-size:26px;}
-.keywords {font-weight:bold; font-size:18px;}
-
-.prev,.next
-{
-cursor:pointer;
-position:static;
-width:auto;
-padding:16px;
-color:rgb(50,50,49);
-font-weight:bold;
-transition: 0.6s ease;
-font-size:40px; margin-top:8%;
-}
-
-.prev {float:left; margin-left:18%;}
-.next {float:right; margin-right:18%;}
-
-.prev:hover,.next:hover {color:grey;}
-
-.btn-read
-{
-position:relative;
-margin-top:100%;
 cursor:pointer;
 border:solid 2px rgb(50,50,49);
 background-color:transparent;
@@ -272,22 +231,16 @@ padding:10px;
 transition:0.5s ease;
 font-size:18px;
 }
+.btn-rapport:hover, .btn-code:hover {background-color:rgb(50,50,49);color:white;}
 
-.btn-read:hover {background-color:rgb(50,50,49);color:white;}
+.date-work,.info-work,.name-work,.keywords {color:rgb(50,50,49);}
+.date-work {font-size:21px;}
+.info-work {font-size:20px;height:cover;}
+.name-work {color:rgb(50,50,49); font-size:26px;}
+.keywords {font-weight:bold; font-size:18px;}
 
-.fade{-webkit-animation-name: fade;-webkit-animation-duration:1.5s;animation-name:fade;animation-duration: 1.5s;}
+.quote {width:100%; position:relative; padding-top:20px; padding-bottom:20px; font-size:20px; text-align:center; background-color:rgb(50,50,49); color:white;}
 
-@-webkit-keyframes fade
-{
-  from {opacity:.4}
-  to {opacity:1}
-}
-
-@keyframes fade
-{
-  from {opacity:.4}
-  to {opacity:1}
-}
 
 /* -------------------- CONTACT --------------------*/
 
@@ -365,33 +318,3 @@ margin-top:3%;
 }
 
 footer a {color:white;cursor:pointer;}
-
-/* -------------------- INTRODUCTION --------------------*/
-
-#introduction .intro 	{margin-left:5%; margin-right:5%; font-size:20px; color:rgb(50,49,49);}
-#introduction 			{height:40em;}
-#introduction span 		{font-weight: bold;}
-#introduction p 		{font-size:18px; color:rgb(50,49,49);}
-#introduction .my-skills, .my-softw 	{width:30%; float:left; text-align:left;}
-#introduction .my-skills				{margin-left:20%;}
-
-/* -------------------- My WORK --------------------*/
-
-#my-work {height:60em; padding-left:5%; padding-right:5%;}
-#my-work .projet {display:inline; background-color:transparent; text-align:left;}
-.btn-rapport, .btn-code 
-{
-margin-left:5%;
-position:relative;
-cursor:pointer;
-border:solid 2px rgb(50,50,49);
-background-color:transparent;
-color:rgb(50,50,49);
-font-family:'Roboto';
-text-decoration:none;
-padding:10px;
-transition:0.5s ease;
-font-size:18px;
-}
-.btn-rapport:hover, .btn-code:hover {background-color:rgb(50,50,49);color:white;}
-

@@ -18,7 +18,7 @@
       <a class="my-name" href="index.html">Alexandra Demski</a>
       <input type=button onClick="document.getElementById('accueil').scrollIntoView();" class="btn-home" value="Home"/>
       <input type=button onClick="document.getElementById('about').scrollIntoView();" class="btn-abt" value="About"/>
-      <input type=button onClick="document.getElementById('work').scrollIntoView();" class="btn-wrk" value="Work"/>
+      <input type=button onClick="document.getElementById('my-work').scrollIntoView();" class="btn-wrk" value="Work"/>
       <input type=button onClick="document.getElementById('contact').scrollIntoView();" class="btn-ctc-eng" value="Contact"/>
       <input type=button onClick="accueil.html" class="btn-eng" value="Eng"/>
     </header>
@@ -122,47 +122,32 @@
 
       <div class="img-para-work"></div>
 
-      <article id="work">
+      <article id="my-work">
 
           <h3>My Work</h3>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="quote">Pleasure in the job puts perfection in the work<br>Aristotle</div>
 
-          <div class="slideshow-container">
-
-            <div class="my-slides fade">
-
-              <h3 class="date-work">30.04.2019</h3>
+          <div id="clever" class="projet">
+            <h3 class="date-work">30.04.2019</h3>
               <h4 class="name-work">Clever Oven</h4>
               <h5 class="keywords">Website - Python/HTML/CSS/JS/PHP - Teamwork - School</h5>
               <p class="info-work">Clever Oven was a one year project realised during my last highschool year. The goal was to create a website for visually impaired people who struggle with cooking. Indeed, for many pre-prepared food, guidelines are written with a very small font. The website helps them with this everyday dutty by automatically setting their oven for a specific aliment saved on their account. The management of registred users' information uses python and php programs with the most sensitive information encrypted.</p>
-              <a href="work.html" target="_blank" class="btn-read">Read More</a>
-
-            </div>
-
-            <div class="my-slides fade">
-
-              <h3 class="date-work">20.12.2019</h3>
-              <h4 class="name-work">The Snake Game</h4>
-              <h5 class="keywords">Video Game - C89 - Teamwork - School</h5>
-              <p class="info-work">The Snake Game was one of my firsts projects during my two years degree. The instructions are very simple: the player controls a constantly moving snake which collects pellets in order to gain points and, at the same time, grow. The project must contain a snake game with a few more rules including a timer, a button to pause or exit the game and a score system. For the graphic aspect of the game, I use a rudimentary graphic library given by the university.</p>
-              <a href="work.html" target="_blank" class="btn-read">Read More</a>
-
-            </div>
-
-            <!--<div class="my-slides fade">
-
-            <h3 class="date-work">13.01.2020</h3>
-            <h4 class="name-work">Personal website</h4>
-            <h5 class="keywords">Website - HTML/CSS/JS/PHP - Individual Work - School</h5>
-            <p class="info-work">The Personal website, also called Portfolio, is on the one hand, a school prohect aiming to put into practice my skills concerning wab development but is also, in the other hand, a professional project meeting certain ergonomis rules in order to inform the user while remaining attractive ; navigation, accessibility, readability and general appearance are therefore analized. The website must contain a home page, a resume and a contact form as well as links to my professional networks. It must also adapt itself according to the size of the screen.</p>
-            <a href="work.html" target="_blank" class="btn-read">Read More</a>
-
-            </div>-->
-
+              <a href="clever-oven-eng.pdf" class="btn-rapport" target="_blank" download>See the Report</a>
+              <a href="https://github.com/Felween/Clever-Oven" class="btn-code" target="_blank" download>See the Code</a>
           </div>
+
+            <div id="snake" class="projet">
+              <h3 class="date-work">20.12.2019</h3>
+            <h4 class="name-work">The Snake Game</h4>
+            <h5 class="keywords">Video Game - C89 - Teamwork - School</h5>
+            <p class="info-work">The Snake Game was one of my firsts projects during my two years degree. The instructions are very simple: the player controls a constantly moving snake which collects pellets in order to gain points and, at the same time, grow. The project must contain a snake game with a few more rules including a timer, a button to pause or exit the game and a score system. For the graphic aspect of the game, I use a rudimentary graphic library given by the university.</p>
+            <a href="snake-eng.pdf" class="btn-rapport" target="_blank" download>See the Report</a>
+              <a href="https://github.com/Felween/Snake-Game" class="btn-code" target="_blank" download>See the Code</a>
+        </div>
+
       </article>
+
 
   <!--CONTACT-->
 
