@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="height=device-height"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="./ico/favicon.ico"/>
+    <title>Alexandra Demski</title>
+  </head>
+  <body>
+
+  <!--Height en fonction d'ecran et media print-->
+
+  <!--MENU-->
+
+    <header class="menu">
+      <a class="my-name" href="index.html">Alexandra Demski</a>
+      <input type=button onClick="document.getElementById('accueil').scrollIntoView();" class="btn-home" value="Accueil"/>
+      <input type=button onClick="document.getElementById('about').scrollIntoView();" class="btn-abt" value="A Propos"/>
+      <input type=button onClick="document.getElementById('my-work').scrollIntoView();" class="btn-wrk" value="Travaux"/>
+      <input type=button onClick="document.getElementById('contact').scrollIntoView();" class="btn-ctc-eng" value="Contacter"/>
+      <input type=button onClick="index.html" class="btn-eng" value="Fr"/>
+    </header>
+
+  <!--HOME-->
+
+    <section>
+
+        <article id="accueil">
+            <h1 class="hello">Bonjour & Bienvenu</h1>
+            <div class="typewriter">
+              <div class=rect>
+                  <p class="typewriter-text">Je m'appelle <span>Alexandra Demski</span></p>
+              </div>
+            </div>
+        </article>
+
+  <!--ABOUT-->
+
+        <article id="about">
+
+          <h3>A Propos</h3>
+          <p class="intro">Bienvenu sur mon Portfolio. Mon nom est Alexandra Demski et je suis actuellement une étudiante en Informatique à l'université Paris-Est Créteil à Fontainebleau où je prépare mon Diplôme Universitaire de Technologique. <br>Je suis à la recherche d'une formation en alternance pour l'année prochaine.</p>
+
+          <div class="content-about">
+
+              <div class="educ">
+                <h4>Education</h4>
+                <table class="tab">
+        					<tbody>
+        						<tr>
+        							<td class="tab-an">2016 - 2019</td>
+        							<td class="tab-ecole">Lycée Gay Lussac<br>Chauny</td>
+        						</tr>
+        						<tr>
+        							<td class="tab-an">2019</td>
+        							<td class="tab-ecole"><span>Baccalauréat Scientifique</span><br>option SVT et spécialisation ISN</td>
+        						</tr>
+        						<tr>
+        							<td class="tab-an">2019 - 2021</td>
+        							<td class="tab-ecole">DUT Informatique<br>IUT Sénart-Fontainebleau<br>Fontainebleau</td>
+        						</tr>
+        						<tr>
+        							<td class="tab-an">2021</td>
+        							<td class="tab-ecole"><span>Diplôme Universitaire de Technologie</span><br>Informatique</td>
+        						</tr>
+        					</tbody>
+				        </table>
+              </div>
+
+              <div class="gen-info">
+              	<h4>Langues</h4>
+                <p class="lang">
+                    <span>Anglais</span>, niveau autonome C1<br><br>
+                    <span>Français</span>, langue maternelle<br><br>
+                    <span>Polonais</span>, langue maternelle<br><br>
+                    <span>Allemand</span>, niveau seuil B1<br><br>
+                    <span>Russe</span>, niveau introductif A1
+                </p>
+              </div>
+
+              <div class="my-skills">
+                <h4>Compétences</h4>
+
+                <h5>HTML/CSS</h5>
+                <div class="container">
+                  <div class="skills html">80%</div>
+                </div>
+
+                <h5>Java</h5>
+                <div class="container">
+                    <div class="skills jv">50%</div>
+                </div>
+
+                <h5>PL/SQL</h5>
+                <div class="container">
+                    <div class="skills sql">70%</div>
+                </div>
+
+                 <h5>Python</h5>
+                <div class="container">
+                    <div class="skills python">70%</div>
+                </div>
+
+                <h5>C89</h5>
+                <div class="container">
+                    <div class="skills c">50%</div>
+                </div>
+
+              </div>
+
+          </div>
+
+        </article>
+
+    <div class="resume">
+      <a href="./doc/alexandra-demski-eng-cv.pdf" class="btn-cv" target="_blank" download>Télécharger mon CV</a>
+    </div>
+
+  <!--WORK-->
+
+      <div class="img-para-work"></div>
+
+      <article id="my-work">
+
+          <h3>Mes Travaux</h3>
+
+          <div id="clever" class="projet">
+            <h3 class="date-work">30.04.2019</h3>
+              <h4 class="name-work">Le Four Intelligent</h4>
+              <h5 class="keywords">Site web - Python/HTML/CSS/JS/PHP - Travail de groupe - Scolaire</h5>
+              <p class="info-work">Le Four Intelligent est un projet d'un an réalisé pendant ma dernière année de lycée. L'objectif était de créer un site web pour les personnes malvoyantes ayant du mal à cuisiner les plats pre-préparés puisque, les conseils d'utilisation sont souvent écrits avec une police trop petite. Le site web les aide dans cette tâche qutotidienne en configurant leur four pour l'aliment sauvegardé au préalable sur leur compte. La gestion des informations des utilisateurs inscrits se fait par le biais de progammes en python ainsi qu'en php avec les informations les plus sensibles cryptées.</p>
+              <a href="./doc/clever-oven-eng.pdf" class="btn-rapport" target="_blank" download>Voir le Rapport</a>
+              <a href="https://github.com/Felween/Clever-Oven" class="btn-code" target="_blank" download>Voir le Code</a>
+          </div>
+
+            <div id="snake" class="projet">
+              <h3 class="date-work">20.12.2019</h3>
+            <h4 class="name-work">Le Jeu du Serpent</h4>
+            <h5 class="keywords">Jeux Vidéo - C89 - Travail de groupe - Scolaire</h5>
+            <p class="info-work">Le Jeu du Serpent est un de mes premiers projets réalisé pendant mon DUT Informatique. Les instructions sont très simples : le joueur contrôle un serpent constamment en mouvement qui ramasse des pastilles afin de gagner des points et, par la même occasion, grandir. Le projet doit comporter un jeu du serpent avec quelques règles en plus notamment un chronomètre, un bouton pour mettre en pause le jeu ou pour le quitter ainsi qu'un système de score. Pour l'aspect graphique du jeu, l'université a mis en place une bibliothèque graphique.</p>
+            <a href="./doc/snake-eng.pdf" class="btn-rapport" target="_blank" download>Voir le Rapport</a>
+              <a href="https://github.com/Felween/Snake-Game" class="btn-code" target="_blank" download>Voir le Code</a>
+        </div>
+
+      </article>
+
+
+  <!--CONTACT-->
+
+      <div class="img-para-ctc"></div>
+
+      <article id="contact">
+
+        <h3>Me contacter</h3>
+
+        <form method="post" action="mail.php">
+
+          <input type="text" class="name" id="name" name="name" placeholder="Votre Nom Complet" required><br>
+          <input type="email" class="email" id="mail" name="mail" placeholder="Votre Email" required><br>
+          <textarea class="msg" id="msg" name="msg" placeholder="Votre Message" required></textarea><br>
+          <input type="submit" class="send" id="send" name="send" value="Submit" />
+          <input type="reset" class="res" value="Reset"/>
+
+        </form>
+
+        <a href="mailto:ademski@rocketmail.com" target="_blank" class="btn-email"><img src="./ico/email.png" class="img-email" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/alexandra-demski-0356a719a/" target="_blank" class="btn-lk"><img src="./ico/linkedin.png" class="img-lk" alt="Linkedin"></a>
+
+
+      </article>
+
+    </section>
+
+    <footer>
+
+    <p class="rights">
+      © Imaginé et crée par Alexandra Demski, tout droit réservé<br>
+      Les illustrations ont été téléchargées à partir du site <a href="https://absurd.design/" title="Absurd design" target="_blank">absurd.design</a><br>
+      Icon réalisée par <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup">Pixelmeetup</a> à partir du site <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br><br>
+      Crée le 20 Décembre 2019
+      <br>
+      Dernière modification 13 Mars 2020
+    </p>
+
+    </footer>
+
+    <script>
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n)
+    {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n)
+    {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n)
+    {
+      var i;
+      var slides = document.getElementsByClassName("my-slides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    </script>
+  </body>
+</html>
