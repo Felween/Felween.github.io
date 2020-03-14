@@ -4,18 +4,19 @@
 html 		{background-color:white; scroll-behavior:smooth;}
 body 		{margin:0; padding-left:20px; padding-right:20px; padding-bottom:20px;}
 header 		{width:100%; padding-top:15px; padding-bottom:15px;}
-input:focus		{border:none;outline:none;}
-input:required 	{box-shadow:none;}
-input:invalid 	{box-shadow:none;}
+input:focus				{border:none;outline:none;}
+input:required 			{box-shadow:none;}
+input:invalid 			{box-shadow:none;}
 input					{border:none;}
 input::-moz-focus-inner {border:none;}
 a::-moz-focus-inner 	{border:none;}
+a 						{text-decoration:none;}
 textarea:focus			{border:none;outline:none;}
 textarea::-moz-focus-inner {border:none;}
 textarea:required 		{box-shadow:none;}
 textarea:invalid 		{box-shadow:none;}
 textarea 				{box-shadow:none;}
-textarea {resize: none;}
+textarea 				{resize: none;}
 
 article
 {
@@ -32,11 +33,13 @@ background-size:cover;
 
 /* -------------------- MENU --------------------*/
 
-header input 	{position:relative; font-size:14px; width:9%;}
-header input:hover {letter-spacing:8px;}
+header input	{position:relative; font-size:14px; width:9%;}
+.btn-eng 		{float:right; font-size:14px; width:9%; text-align:center;}
+header input:hover, .btn-eng:hover {letter-spacing:8px;}
 .btn-ctc-eng 	{width:12%;}
-.btn-eng 		{width:6%;}
-.btn-ctc-fr 	{width:5%;}
+.btn-ctc 		{width:15%;}
+.btn-abt-fr		{width:12%;}
+.btn-eng 		{width:4%;}
 
 header .my-name
 {
@@ -61,7 +64,7 @@ padding-top:25px;
 padding-bottom:25px;
 }
 
-header input
+header input, .btn-eng
 {
 position:relative;
 font-family:Geneva, sans-serif;
