@@ -1,16 +1,20 @@
 <?php
-
-$from = $_POST['name'];
-$mail = $_POST['mail'];
-$msg = $_POST['msg'];
+$first = $_POST['first'];
+$first = strip_tags($first);
+$last = $_POST['last'];
+$last = strip_tags($last);
+$email = $_POST['email'];
+$email = strip_tags($email);
+$object = $_POST['object'];
+$object = strip_tags($object);
+$message = $_POST['message'];
+$message = strip_tags($message);
 
 $to = "ademski@rocketmail.com";
 
-$subject = "Message Site Personnel";
+$message = "Un nouveau message\nNom : $first $last\nE-mail : $email\nMessage : $msg\n";
 
-$message = "Un nouveau message\nNom : $from\nE-mail : $mail\nMessage : $msg\n";
-
-mail($to,$subject,$message);
+mail($to,$object,$message);
 
 include("index.html");
 
