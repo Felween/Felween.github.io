@@ -1,199 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width"/>
-    <meta name="viewport" content="height=device-height"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="shortcut icon" href="./ico/favicon.ico"/>
-    <title>Alexandra Demski</title>
-  </head>
-  <body>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--devices-->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel="stylesheet" href="./style.css"/>
+	<title>Alexandra Demski</title>
+</head>
+<style type="text/css">
+	.small-links {display:none;}
+</style>
 
-  <!--Height en fonction d'ecran et media print-->
+<script>
+view_page('home');
+function view_page(name){
+	if(name=='home'){
+		window.scrollTo(0,0);
+	} else {
+		var element = document.getElementById(name);
+		var header = 60;
+		var position = element.getBoundingClientRect().top + window.scrollY;
+		var offset = position - header;
+		window.scrollTo({top:offset});
+	}
+}
+</script>
 
-  <!--MENU-->
+<body>
+	<header>
+		<nav>
+			<div class="container-logo">
+				<div>
+					<a class="logo" href="">Alexandra Demski</a>
+				</div>
+			</div>
+			<ul class="nav-links">
+				<button class="nav-btn" onclick="view_page('home')"><li class="nav-item">Home</li></button>
+				<button class="nav-btn" onclick="view_page('about')"><li class="nav-item">About</li></button>
+				<button class="nav-btn" onclick="view_page('work')"><li class="nav-item">Work</li></button>
+				<button class="nav-btn" onclick="view_page('contact')"><li class="nav-item">Contact</li></button>
+			</ul>
+		</nav>
+	</header>
 
-    <header class="menu">
-      <a class="my-name" href="index.html">Alexandra Demski</a>
-      <input type=button onClick="document.getElementById('accueil').scrollIntoView();" class="btn-home" value="Home"/>
-      <input type=button onClick="document.getElementById('about').scrollIntoView();" class="btn-abt" value="About"/>
-      <input type=button onClick="document.getElementById('my-work').scrollIntoView();" class="btn-wrk" value="Work"/>
-      <input type=button onClick="document.getElementById('contact').scrollIntoView();" class="btn-ctc-eng" value="Contact"/>
-      <a href="accueil.html" title="Access to French version" class="btn-eng">Eng</a>
-    </header>
+	<main>
+		<section>
+			<article id="home" class="parallax img-1">
+				<h3 class="subtitle-home">Hello & Welcome</h3>
+				<h1 class="title-home">I am Alexandra Demski</h1>
+				<p class="text-home">To me, Computer Science represents a meeting place for creative expression and logical reflexion, it allows me to challenge my knowledge and learn about my two passions : art and technology. I aspire to became a full-stack developer in order to keep coding and designing products.</p>
+			</article>
 
-  <!--HOME-->
+			<article id="about">
+				<h2 class="title-section">About me</h2><br>
+				<p class="text-section">I am currenlty preparing my two-year Technical University Degree in IT. I am on my second year with a work-study contract.</p><br><br>
+				<div class="about-container">
+					<div class="about-article">
+						<h3 class="subtitle-section">Education</h3><br>
+						<table class="table-hover">
+			              <tbody>
+			                <tr>
+			                    <td class="table-date">2016 - 2019</td>
+			                    <td class="table-info">Highschool Gay Lussac<br>Chauny</td>
+			                </tr>
+			                <tr>
+			                    <td class="table-date">2019</td>
+			                    <td class="table-info">Scientific Baccalaureate<br>IT specialization</td>
+			                </tr>
+			                <tr>
+			                    <td class="table-date">2019 - 2021</td>
+			                    <td class="table-info">IUT Sénart-Fontainebleau<br>Fontainebleau</td>
+			                </tr>
+			                <tr>
+			                    <td class="table-date table-footer">2021</td>
+			                    <td class="table-info table-footer">Technical University Degree<br>Computer Science</td>
+			                </tr>
+			              </tbody>
+			            </table> 
+			        </div>
+			        <div class="about-article">
+			        	<h3 class="subtitle-section">Languages</h3><br><br>
+			        	<ul>
+			                <li><strong>English</strong>, advanced</li><br>
+			                <li><strong>French</strong>, mother tongue</li><br>
+			                <li><strong>Polish</strong>, mother tongue</li><br>
+			                <li><strong>Deutsch</strong>, intermediate</li><br>
+			                <li><strong>Russian</strong>, novice</li>
+			            </ul>
+			        </div>
+			        <div class="about-article">
+			        	<h3 class="subtitle-section">Skills</h3><br><br>
+			        	<ul>
+			                <li><strong>Web</strong> : HTML - CSS - JS - PHP - CodeIgniter (MVC)</li><br>
+			                <li><strong>Database</strong> : MySQL - PL/SQL</li><br>
+			                <li><strong>Network</strong> : Scripting (bash) - Thumb (ARM)</li><br>
+			                <li><strong>Programming</strong> : Java - Python - C89</li>
+			            </ul>
+			        </div>
+			    </div>
+			</article>
 
-    <section>
+			<article id="work" class="parallax img-2">
+				<h2 class="title-section">My Work</h2><br>
 
-        <article id="accueil">
-            <h1 class="hello">Hello & Welcome</h1>
-            <div class="typewriter">
-              <div class=rect>
-                  <p class="typewriter-text">I am <span>Alexandra Demski</span></p>
-              </div>
-            </div>
-        </article>
+				<div class="work-article">
+					<h4 class="date-project">30.06.2020</h4><br>
+					<h3 class="subtitle-section">Quaestio</h3><br>
+					<h5 class="tag-project">Website - HTML / CSS / JS / PHP / CodeIgniter - Individual - Personnal</h5><br>
+					<p class="info-project">Quaestio started as a student project with a full-stack development. The goal was to create a website allowing the user to create and respond to quizzes.It quickly became a larger thing as I wanted to create an application which I, as a student, can use to organize my week around projects and exams. I question myself what features do I want, need and can help me to work more efficiently.</p><br><br>
+					<a href="" target="_blank" class="btn-project">Read the Report</a>
+				</div>
 
-  <!--ABOUT-->
+				<div class="work-article">
+					<h4 class="date-project">10.04.2020</h4><br>
+					<h3 class="subtitle-section">Sudoku</h3><br>
+					<h5 class="tag-project">Application - Java - Individual - School</h5><br>
+					<p class="info-project">In order to complete a sudoku grid, the player need to fill each cell with a number between 1 and 9 with no duplicate in each row, column and square of the grid. The goal of this project was to programm the game and include it in a user-friendly environment with some automatic features such as the resolution and creation of a new grid.</p><br><br>
+					<a href="" target="_blank" class="btn-project">Read the Report</a>
+				</div>
 
-        <article id="about">
+				<div class="work-article">
+					<h4 class="date-project">20.12.2019</h4><br>
+					<h3 class="subtitle-section">Snake</h3><br>
+					<h5 class="tag-project">Game - C89 - Teamwork - School</h5><br>
+					<p class="info-project">Everyone remember this simple and yet so popular game first introduced in 1976 on arcade and in 1998 on Nokia mobile phones. The player controls a line constatly moving, representing the snake. The goal is to collect dots in order to make the snake grow while avoiding its body and, in some version, the end of the playground.</p><br><br>
+					<a href="" target="_blank" class="btn-project">Read the Report</a>
+				</div>
+				
+			</article>
 
-          <h3>About me</h3>
-          <p class="intro">Welcome to my Portfolio. My name's Alexandra Demski and I am currently an IT student in the University of Paris-Est Créteil in Fontainebleau where I prepare my two-years degree.<br> I am actively looking for a work-study for the next year.</p>
+			<article id="contact">
+				<h2 class="title-section">Contact me</h2><br><br>
+				<form id="msg" method="post" action="mail.php">
+					<input class="input name" type="text" name="first" placeholder="Enter your First Name">
+					<input class="input name" type="text" name="last" placeholder="Enter your Last Name"><br>
+					<input class="input email" type="email" name="email" placeholder="Enter your E-mail"><br>
+					<input class="input email" type="text" name="object" placeholder="Enter the Object"><br><br>
+					<textarea class="area" name="message" form="msg" placeholder="Enter the Message" rows=5></textarea><br><br><br>
+					<button class="btn-sub" type="submit">Send Message</button>
+			</article>
 
-          <div class="content-about">
+		</section>
+	</main>
 
-              <div class="educ">
-                <h4>Education</h4>
-                <table class="tab">
-        					<tbody>
-        						<tr>
-        							<td class="tab-an">2016 - 2019</td>
-        							<td class="tab-ecole">Highschool Gay Lussac<br>Chauny</td>
-        						</tr>
-        						<tr>
-        							<td class="tab-an">2019</td>
-        							<td class="tab-ecole"><span>Scientific Baccalaureate</span><br>Biology option and IT specialization</td>
-        						</tr>
-        						<tr>
-        							<td class="tab-an">2019 - 2021</td>
-        							<td class="tab-ecole">Two-year degree in IT<br>IUT Sénart-Fontainebleau<br>Fontainebleau</td>
-        						</tr>
-        						<tr>
-        							<td class="tab-an">2021</td>
-        							<td class="tab-ecole"><span>Technical University Degree</span><br>Computer Science</td>
-        						</tr>
-        					</tbody>
-				        </table>
-              </div>
+	<footer>
+		<p class="rights">
+			© Imagined and created by Alexandra Demski, all rights reserved<br>
+			The illustrations were downloaded from absurd.design<br>
+			Icon made by Pixelmeetup from www.flaticon.com<br><br>
 
-              <div class="gen-info">
-              	<h4>Languages</h4>
-                <p class="lang">
-                    <span>English</span>, bilingual<br><br>
-                    <span>French</span>, maternal tongue<br><br>
-                    <span>Polish</span>, maternal tongue<br><br>
-                    <span>Deutsch</span>, average level<br><br>
-                    <span>Russian</span>, basic level
-                </p>
-              </div>
-
-              <div class="my-skills">
-                <h4>My skills</h4>
-
-                <h5>HTML/CSS</h5>
-                <div class="container">
-                  <div class="skills html">80%</div>
-                </div>
-
-                <h5>Java</h5>
-                <div class="container">
-                    <div class="skills jv">50%</div>
-                </div>
-
-                <h5>PL/SQL</h5>
-                <div class="container">
-                    <div class="skills sql">70%</div>
-                </div>
-
-                 <h5>Python</h5>
-                <div class="container">
-                    <div class="skills python">70%</div>
-                </div>
-
-                <h5>C89</h5>
-                <div class="container">
-                    <div class="skills c">50%</div>
-                </div>
-
-              </div>
-
-          </div>
-
-        </article>
-
-    <div class="resume">
-      <a href="./doc/alexandra-demski-eng-cv.pdf" class="btn-cv" target="_blank" download>Download my Resume</a>
-    </div>
-
-  <!--WORK-->
-
-      <div class="img-para-work"></div>
-
-      <article id="my-work">
-
-          <h3>My Work</h3>
-
-          <div id="clever" class="projet">
-            <h3 class="date-work">30.04.2019</h3>
-              <h4 class="name-work">Clever Oven</h4>
-              <h5 class="keywords">Website - Python/HTML/CSS/JS/PHP - Teamwork - School</h5>
-              <p class="info-work">Clever Oven was a one year project realised during my last highschool year. The goal was to create a website for visually impaired people who struggle with cooking. Indeed, for many pre-prepared food, guidelines are written with a very small font. The website helps them with this everyday dutty by automatically setting their oven for a specific aliment saved on their account. The management of registred users' information uses python and php programs with the most sensitive information encrypted.</p>
-              <a href="./doc/clever-oven-eng.pdf" class="btn-rapport" target="_blank" download>See the Report</a>
-              <a href="https://github.com/Felween/Clever-Oven" class="btn-code" target="_blank" download>See the Code</a>
-          </div>
-
-          <div id="snake" class="projet">
-            <h3 class="date-work">20.12.2019</h3>
-            <h4 class="name-work">The Snake Game</h4>
-            <h5 class="keywords">Video Game - C89 - Teamwork - School</h5>
-            <p class="info-work">The Snake Game was one of my firsts projects during my two years degree. The instructions are very simple: the player controls a constantly moving snake which collects pellets in order to gain points and, at the same time, grow. The project must contain a snake game with a few more rules including a timer, a button to pause or exit the game and a score system. For the graphic aspect of the game, I use a rudimentary graphic library given by the university.</p>
-            <a href="./doc/snake-eng.pdf" class="btn-rapport" target="_blank" download>See the Report</a>
-              <a href="https://github.com/Felween/Snake-Game" class="btn-code" target="_blank" download>See the Code</a>
-          </div>
-
-          <div id="sudoku" class="projet">
-            <h3 class="date-work">10.04.2020</h3>
-              <h4 class="name-work">Sudoku</h4>
-              <h5 class="keywords">Application - Java - Individual - School</h5>
-              <p class="info-work">The goal of the project was to create a user-friendly interface for designing or solving Sudoku grids, a famous puzzle game which requires the player to fill the grid respecting a starting configuration and some simple rules. A complete Sudoku grid has each cells completed with a number between 1 to 9 and each rows, columns and squares having all the numbers in. The project must provide two features : a solving option and a creating option. I decided to incorporate an automatic and manual version for both features. The grids are saved in a file with a .gri extension and can be loaded or changed by the user.</p>
-              <a href="./doc/sudoku-eng.pdf" class="btn-rapport" target="_blank" download>See the Report</a>
-              <a href="https://github.com/Felween/Sudoku-Game" class="btn-code" target="_blank" download>See the Code</a>
-          </div>
-
-      </article>
-
-
-  <!--CONTACT-->
-
-      <div class="img-para-ctc"></div>
-
-      <article id="contact">
-
-        <h3>Let's get in touch</h3>
-
-        <form method="post" action="mail.php">
-
-          <input type="text" class="name" id="name" name="name" placeholder="Your Full Name" required><br>
-          <input type="email" class="email" id="mail" name="mail" placeholder="Your Email" required><br>
-          <textarea class="msg" id="msg" name="msg" placeholder="Your Message" required></textarea><br>
-          <input type="submit" class="send" id="send" name="send" value="Submit" />
-          <input type="reset" class="res" value="Reset"/>
-
-        </form>
-
-        <a href="mailto:ademski@rocketmail.com" target="_blank" class="btn-email"><img src="./ico/email.png" class="img-email" alt="Email"></a>
-        <a href="https://www.linkedin.com/in/alexandra-demski-0356a719a/" target="_blank" class="btn-lk"><img src="./ico/linkedin.png" class="img-lk" alt="Linkedin"></a>
-
-
-      </article>
-
-    </section>
-
-    <footer>
-
-    <p class="rights">
-      © Imagined and created by Alexandra Demski, all rights reserved<br>
-      The illustrations were downloaded from <a href="https://absurd.design/" title="Absurd design" target="_blank">absurd.design</a><br>
-      Icon made by <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup">Pixelmeetup</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br><br>
-      Created the 20th December 2019
-      <br>
-      Last update the 17th April 2020
-    </p>
-
-    </footer>
-    
-  </body>
+			Created the 20th December 2019<br>
+			Last update the 30th July 2020
+		</p>
+	</footer>
+</body>
 </html>
