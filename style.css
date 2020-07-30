@@ -74,8 +74,8 @@ li {list-style:none; font-family:'Roboto';}
 	.info-project, .tag-project {font-size:16px;}
 	.btn-project, .btn-sub {padding:3%; font-size:13px;}
 
-	.input {font-size:13px; padding-bottom:1%; margin-right:2%; margin-bottom:2%;}
-	.name {width:40%;}
+	.input {font-size:13px; padding-bottom:1%; margin-right:2%; margin-bottom:5%;}
+	.name {width:82%;}
 	.email {width:82%;}
 	.area {font-size:13px; padding:1%; width:82%;}
 
