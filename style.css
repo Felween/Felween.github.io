@@ -9,8 +9,7 @@ header{position:sticky; position:-webkit-sticky; top:0; z-index:2;}
 nav {background-color:#2b2a2a;}
 body {background-color:#222; color:white;}
 article {position:relative; width:100%; height:cover;}
-footer {position:relative; background-color:#2b2a2a; padding:1%;}
-.rights {font-size:12px;}
+footer {position:relative; background-color:#2b2a2a;}
 
 nav {display:flex; padding:2%;}
 .container-logo {flex:1;}
@@ -79,8 +78,8 @@ li {list-style:none; font-family:'Roboto';}
 	.email {width:82%;}
 	.area {font-size:13px; padding:1%; width:82%;}
 
-	footer {padding:1%;}
-	.rights {font-size:12px;}
+	footer {padding:3%;}
+	.rights {font-size:10px;}
 }
 
 @media screen and (min-device-width:768px) {
@@ -120,6 +119,9 @@ li {list-style:none; font-family:'Roboto';}
 	.email {width:42%;}
 	.area {font-size:18px; padding:1%; width:42%;}
 	.btn-project, .btn-sub {padding:1%; font-size:18px;}
+
+	footer {padding:1%;}
+	.rights {font-size:12px;}
 }
 
 @media screen and (min-device-width:1200px) {
