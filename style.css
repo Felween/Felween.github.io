@@ -30,30 +30,29 @@ nav {display:flex; padding:2%;}
 .title-section {font-family:'Varela';}
 .subtitle-section, .text-section {font-family:'Roboto';}
 
-table {border-collapse: collapse; font-family:'Source';}
-td {border-top:1px solid white;}
-tr:hover {background-color:#2c2b2b;}
+#about table {border-collapse: collapse; font-family:'Source';}
+#about td {border-top:1px solid white;}
+#about tr:hover {background-color:#2c2b2b;}
 .table-date {font-weight:bold; letter-spacing:1px;}
 .table-footer {border-bottom:1px solid white;}
 
 li {list-style:none; font-family:'Roboto';}
 
 .date-project {font-family:'Source';}
-.info-project, .tag-project {font-family:'Roboto'; text-align:justify;} 
+.info-project, .tag-project {font-family:'Roboto';} 
 .tag-project {font-weight:bold;} 
 .btn-project {color:white; text-decoration:none; cursor:pointer; border:2px solid white; font-family:'Roboto'; font-weight:bold; transition:all 0.5s ease-in-out; background-color:transparent;}
 .btn-project:hover, .btn-project:focus, .btn-project:active {background-color:white; color:#2b2a2a;}
 
-.input, .area {transition:all 0.5s ease-in-out;}
-.input {background-color:transparent; border:none; border-bottom:2px solid #ccd1d1; color:white; font-family:'Roboto';}
-.area {font-family:'Roboto'; border:2px solid #ccd1d1; color:white; background-color:transparent;}
-.input:hover, .input:focus, .input:active {border-bottom:2px solid white;}
-.area:hover, .area:focus, .area:active {border:2px solid white;}
-
-.btn-sub {cursor:pointer; font-family:'Roboto'; color:#2b2a2a; background-color:white; font-weight:bold; transition:all 0.5s ease-in-out; border:1px solid #2b2a2a;}
-.btn-sub:hover, .btn-sub:active, .btn-sub:focus {background-color:#2b2a2a; color:white; border:1px solid white;}
+#contact table {width:40%; font-family:'Roboto';}
+#contact td {padding:2%;}
+.media-image {width:5%;}
+.media-text {width:25%;}
+.media {width:50%;}
 
 .rights {color:#ccd1d1; text-align:center;}
+
+a {color:white;}
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px) {
 
