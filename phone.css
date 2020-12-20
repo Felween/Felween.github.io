@@ -1,0 +1,33 @@
+article {padding-bottom:10%; padding-top:10%; padding-left:5%; padding-right:5%;}
+nav {padding:4%;}
+
+.nav-btn {margin-right:5%; font-size:15px;}
+
+.title-home {font-size:30px;}
+.subtitle-home {font-size:23px;}
+.text-home {font-size:16px;}
+.btn {padding:3%;}
+
+.title-section {font-size:23px;}
+.subtitle-section {font-size:20px;}
+.text-section {font-size:16px; margin-top:5%; margin-bottom:5%;}
+
+#about .subtitle-section {padding-top:4%; padding-bottom:4%;}
+#about .subtitle-section {text-align:center;}
+.tag-skill {padding:1%;}
+.tag-educ {font-size:14px; margin-bottom:3%;}
+.tag-educ {padding:3%;}
+.skill {margin-bottom:2%; margin-top:2%;}
+
+.work-article {margin-top:10%; margin-bottom:10%;}
+
+.date-project {font-size:18px;}
+.tag-project {font-size:18px;}
+.info-project {font-size:15px;}
+
+.tag-contact {display:flex;margin-bottom:3%; margin-top:3%;}
+.tag-contact p {margin-top:auto; margin-bottom:auto; font-size:18px;}
+.ctc-img {width:10%; height:10% !important; margin-right:2%;}
+
+footer {padding:3%;}
+.rights {font-size:10px;}

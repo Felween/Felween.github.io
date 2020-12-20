@@ -4,9 +4,11 @@
 	<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--devices-->
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-		<link rel="stylesheet" href="./style.css"/>
+		<link rel="stylesheet" href="./common.css"/>
+		<link rel="stylesheet" media="screen and (min-device-width:320px) and (max-device-width: 767px)" href="phone.css" />
+		<link rel="stylesheet" media="screen and (min-device-width: 768px)" href="other.css" />
 		<link rel="shortcut icon" href="./img/favicon.ico"/>
-	<title>Alexandra Demski</title>
+	<title>Felween</title>
 </head>
 <style type="text/css">
 	.small-links {display:none;}
@@ -32,7 +34,7 @@ function view_page(name){
 		<nav>
 			<div class="container-logo">
 				<div>
-					<a class="logo" href="">Alexandra Demski</a>
+					<a class="logo" href="">Felween</a>
 				</div>
 			</div>
 			<ul class="nav-links">
@@ -48,106 +50,92 @@ function view_page(name){
 		<section>
 			<article id="home" class="parallax img-1">
 				<h3 class="subtitle-home">Hello & Welcome</h3>
-				<h1 class="title-home">I am Alexandra Demski</h1>
-				<p class="text-home">To me, Computer Science represents a meeting place for creative expression and logical reflexion, it allows me to challenge my knowledge and learn about my two passions : art and technology. I aspire to became a full-stack developer in order to keep coding and designing products.</p>
+				<h1 class="title-home">I am Felween</h1>
+				<p class="text-home">To me, Computer Science represents a meeting place for creative expression and logical reflexion, it allows me to challenge my knowledge and learn about my two passions : art and technology. I aspire to become a full-stack developer in order to keep coding and designing products and possibly forward my carrieer with a chief project position afterwards.</p><br><br>
+				<p class="cv-container"><a class="btn" href="">Download my resume</a></p>
 			</article>
 
 			<article id="about">
-				<h2 class="title-section">About me</h2><br>
-				<p class="text-section">I am currenlty preparing my two-year Technical University Degree in IT. I am on my second year with a work-study contract.</p><br><br>
+				<h2 class="title-section">About me</h2>
+				<p class="text-section">As an assiduous student, I believe that with hard work, organisation and, most importantly, determination, we can accomplish great things, that is why I tend to be ambitious in my life choices, and aim for an engineer’s degree in Computer Science to further learn and improve my skills in this fascinating domain. While Computer Science is one of my greatest interests, in my spare time, I also pursue creative hobbies such as painting and drawing. I like to keep myself busy while also learning and improving myself.</p>
 				<div class="about-container">
 					<div class="about-article">
-						<h3 class="subtitle-section">Education</h3><br>
-						<table class="table-hover">
-			              <tbody>
-			                <tr>
-			                    <td class="table-date">2016 - 2019</td>
-			                    <td class="table-info">Highschool Gay Lussac<br>Chauny</td>
-			                </tr>
-			                <tr>
-			                    <td class="table-date">2019</td>
-			                    <td class="table-info">Scientific Baccalaureate<br>IT specialization</td>
-			                </tr>
-			                <tr>
-			                    <td class="table-date">2019 - 2021</td>
-			                    <td class="table-info">IUT Sénart-Fontainebleau<br>Fontainebleau</td>
-			                </tr>
-			                <tr>
-			                    <td class="table-date table-footer">2021</td>
-			                    <td class="table-info table-footer">Technical University Degree<br>Computer Science</td>
-			                </tr>
-			              </tbody>
-			            </table> 
-			        </div>
-			        <div class="about-article">
-			        	<h3 class="subtitle-section">Languages</h3><br><br>
-			        	<ul>
-			                <li><strong>English</strong>, advanced</li><br>
-			                <li><strong>French</strong>, mother tongue</li><br>
-			                <li><strong>Polish</strong>, mother tongue</li><br>
-			                <li><strong>Deutsch</strong>, intermediate</li><br>
-			                <li><strong>Russian</strong>, novice</li>
-			            </ul>
-			        </div>
-			        <div class="about-article">
-			        	<h3 class="subtitle-section">Skills</h3><br><br>
-			        	<ul>
-			                <li><strong>Web</strong> : HTML - CSS - JS - PHP - CodeIgniter (MVC)</li><br>
-			                <li><strong>Database</strong> : MySQL - PL/SQL</li><br>
-			                <li><strong>Network</strong> : Scripting (bash) - Thumb (ARM)</li><br>
-			                <li><strong>Programming</strong> : Java - Python - C89</li>
-			            </ul>
-			        </div>
+						<h3 class="subtitle-section">Education & Degrees</h3>
+						<div class="education">
+							<div class="tag-educ"><b>2016 - 2019</b><br>Highschool Name - City<br>Scientific Baccalaureat IT Specialization</div>
+							<div class="tag-educ"><b>2019 - 2021</b><br>IUT City<br>Technical University Degree - Computer Science</div>
+							<div class="tag-educ"><b>2020</b><br>IBM Certificate of Achievement<br>AI for Everyone : Master the Basics</div>
+						</div>
+					</div>
+					<div class="about-article">
+						<h3 class="subtitle-section">Skills & Expertise</h3>
+						<div class="skills">
+							<div class="skill">
+								<h4 class="skill-title">Communication</h4><hr>
+								<div class="tag-skill">English (advanced)</div>
+								<div class="tag-skill">French (mother tongue)</div>
+								<div class="tag-skill">Polish (mother tongue)</div>
+								<div class="tag-skill">German (intermediate)</div>
+								<div class="tag-skill">Russian (novice)</div>
+							</div>
+							<div class="skill">
+								<h4 class="skill-title">Programming</h4><hr>
+								<div class="tag-skill">Object Oriented (Java)</div>
+								<div class="tag-skill">Imperative (C, Python)</div>
+								<div class="tag-skill">Project Management</div>
+								<div class="tag-skill">Interface Conception</div>
+							</div>
+							<div class="skill">
+								<h4 class="skill-title">Web Development</h4><hr>
+								<div class="tag-skill">Front-End (HTML, CSS, JavaScript)</div>
+								<div class="tag-skill">Back-End (PHP)</div>
+								<div class="tag-skill">Frameworks (CodeIgniter, Laravel, Bootstrap)</div>
+							</div>
+							<div class="skill">
+								<h4 class="skill-title">Data Base</h4><hr>
+								<div class="tag-skill">Data Architecture and Optimization</div>
+								<div class="tag-skill">Data Definition, Manipulation and Control Language (SQL)</div>
+								<div class="tag-skill">Structured Query Language (PL/SQL)</div>
+							</div>
+						</div>
+					</div>
 			    </div>
 			</article>
 
 			<article id="work" class="parallax img-2">
-				<h2 class="title-section">My Work</h2><br>
-
+				<h2 class="title-section">My Work</h2>
 				<div class="work-article">
 					<h4 class="date-project">30.06.2020</h4><br>
 					<h3 class="subtitle-section">Quaestio</h3><br>
 					<h5 class="tag-project">Website - HTML / CSS / JS / PHP / CodeIgniter - Individual - Personnal</h5><br>
 					<p class="info-project">Quaestio started as a student project with a full-stack development. The goal was to create a website allowing the user to create and respond to quizzes.It quickly became a larger thing as I wanted to create an application which I, as a student, can use to organize my week around projects and exams. I question myself what features do I want, need and can help me to work more efficiently.</p><br><br>
-					<a href="" target="_blank" class="btn-project">Read the Report</a>
-				</div>
+					<a href="" class="btn">Read the Report</a>
+				</div><hr>
 
 				<div class="work-article">
 					<h4 class="date-project">10.04.2020</h4><br>
 					<h3 class="subtitle-section">Sudoku</h3><br>
 					<h5 class="tag-project">Application - Java - Individual - School</h5><br>
 					<p class="info-project">In order to complete a sudoku grid, the player need to fill each cell with a number between 1 and 9 with no duplicate in each row, column and square of the grid. The goal of this project was to programm the game and include it in a user-friendly environment with some automatic features such as the resolution and creation of a new grid.</p><br><br>
-					<a href="" target="_blank" class="btn-project">Read the Report</a>
-				</div>
+					<a href="" class="btn">Read the Report</a>
+				</div><hr>
 
 				<div class="work-article">
 					<h4 class="date-project">20.12.2019</h4><br>
 					<h3 class="subtitle-section">Snake</h3><br>
 					<h5 class="tag-project">Game - C89 - Teamwork - School</h5><br>
 					<p class="info-project">Everyone remember this simple and yet so popular game first introduced in 1976 on arcade and in 1998 on Nokia mobile phones. The player controls a line constatly moving, representing the snake. The goal is to collect dots in order to make the snake grow while avoiding its body and, in some version, the end of the playground.</p><br><br>
-					<a href="" target="_blank" class="btn-project">Read the Report</a>
+					<a href="" class="btn">Read the Report</a>
 				</div>
-				
 			</article>
 
 			<article id="contact">
-				<h2 class="title-section">Contact me</h2><br><br>
-				<table class="media-container">
-					<tbody>
-						<tr>
-							<td class="media-image"><img class="media" src="/img/mail.png"></td>
-							<td class="media-text"><p>By email ademski@rocketmail.com</p></td>
-						</tr>
-						<tr>
-							<td class="media-image"><img class="media" src="/img/linkedin.png"></td>
-							<td class="media-text"><p>By my <a href="https://www.linkedin.com/in/alexandra-demski-0356a719a/" target="_blank">Linkedin profile</a></p></td>
-						</tr>
-						<tr>
-							<td class="media-image"><img class="media" src="/img/github.png"></td>
-							<td class="media-text"><p>Go see my <a href="https://github.com/Felween" target="_blank">Github Deposit</a></p></td>
-						</tr>
-					</tbody>
-				</table>
+				<h2 class="title-section">Contact me</h2>
+				<div class="contact-article">
+					<div class="tag-contact"><img class="ctc-img" src="./img/linkedin.png" alt=""><p><a href="">Linkedin Profile</a></p></div>
+					<div class="tag-contact"><img class="ctc-img" src="./img/mail.png" alt=""><p>mymail@mail.com</p></div>
+					<div class="tag-contact"><img class="ctc-img" src="./img/phone.png" alt=""><p>01.01.01.01.01</p></div>
+				</div>
 			</article>
 
 		</section>
@@ -155,12 +143,9 @@ function view_page(name){
 
 	<footer>
 		<p class="rights">
-			© Imagined and created by Alexandra Demski, all rights reserved<br>
+			© Imagined and created by Felween, all rights reserved<br>
 			The illustrations were downloaded from <a href="https://absurd.design/">absurd.design</a><br>
-			Icon made by <a href="https://www.flaticon.com/authors/pixelmeetup">Pixelmeetup</a> and Social Media Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a><br>
-
-			Created the 20th December 2019<br>
-			Last update the 30th July 2020
+			The icon was made by <a href="https://www.flaticon.com/authors/pixelmeetup">PixelMeetup</a>
 		</p>
 	</footer>
 </body>

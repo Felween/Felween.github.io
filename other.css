@@ -1,0 +1,37 @@
+article {padding:5%;}
+
+nav {padding:2%;}
+.nav-btn {margin-right:10%; font-size:20px;}
+.logo {font-size:28px;}
+
+.title-home {font-size:80px;}
+.subtitle-home {font-size:35px;}
+.text-home {font-size:20px; text-align:justify;}
+
+.btn {padding:1%;}
+
+.title-section {font-size:40px;}
+.subtitle-section {font-size:25px;}
+.text-section {font-size:20px; margin-top:2%; margin-bottom:2%;}
+
+.about-article {width:100%;}
+#about .text-section {text-align:justify;}
+#about .subtitle-section {margin-top:2%; margin-bottom:2%;}
+.skill-title{font-size:20px;}
+.skills, .education {display:flex; height:cover;}
+.skill, .tag-educ {flex:1;}
+.tag-educ {margin:1%; padding:1%;}
+
+.date-project {font-size:20px;}
+.tag-project {font-size:20px;}
+.info-project {font-size:18px;}
+
+.work-article {padding:3%;}
+
+.contact-article {display:flex; margin-top:2%;}
+.tag-contact {flex:1; text-align:center;}
+.tag-contact {font-size:20px;}
+.ctc-img {width:15%;}
+
+footer {padding:1%;}
+.rights {font-size:12px;}
